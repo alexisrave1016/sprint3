@@ -1,0 +1,155 @@
+.navbar{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar_logo{
+    width: 126px;
+    height: 40px;
+    margin: 0 20px;
+    margin-top: 18px;
+    object-fit: contain;
+}
+
+.navbar_search{
+    display: flex;
+    flex: 1;
+}
+.navbar_departamentos{
+    border-radius:  5px 0px 0px 5px ;
+    height: 12px;
+    padding: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 15px;
+    
+
+}     
+.navbar_searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 40vh;
+    
+}
+
+.logo_busqueda{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd904d;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.logo_carrito{
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: auto;
+    
+  
+}
+
+.logo_ubicacion{
+    padding: 5px;
+    height: 22px !important;
+    color: white;
+}
+
+.navbar_opciones{
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title_ubicacion{
+    color: white;
+    margin-left: 25px;
+    font-size: 15px;
+    
+}
+
+.title_ubicacion1{
+    color: white;
+    margin-left: 0px;
+}
+
+.title_carrito{
+    color: white; 
+    margin: 0px 20px 5px 5px;
+}
+
+.navbar_opcion1{
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.navbar_opcion2{
+    color: white;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.navbar_pedidos{
+   
+    display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   margin-right: 10px;
+
+}
+
+.navber_ubicacion{
+    display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.navbar_pedidos1{
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 5px; 
+}
+
+.navbar_pedidos2{
+    color: white;
+    font-weight: 600;
+    margin: 5px;
+}
+.navbar_carrito{
+    display: flex;
+    height: 50px;
+    width: 84px;
+    align-items:flex-end;
+}
+
+.navbar_link{
+    color: white;
+    text-decoration: none;
+}
+
+.opciones_total{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.detalle_carrito{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.numero_productos{
+    margin-left: 8px;
+    font-size: 20px;
+}
