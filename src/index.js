@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import './styles/styles.css'
+import './styles/login.css'
 import './styles/navbar.css'
 import AppRouter from './routers/AppRouter';
 
