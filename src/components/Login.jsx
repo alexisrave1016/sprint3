@@ -24,6 +24,7 @@ function Login() {
             <p>Al continuar, aceptas las Condiciones de uso y el Aviso de privacidad de Amazon.</p>
 
         </div>
+        <hr className="linea"/> <span className="title_nuevo_amazon">¿Eres nuevo en Amazon?</span>
         <button className="login_registro">Crea tu cuenta de Amazon</button>
     </div>
 

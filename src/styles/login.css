@@ -45,8 +45,9 @@
 }
 
 .login_container p{
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: 12px;
+
 
 }
 
@@ -79,6 +80,7 @@
     background-color: white;
     border: none;
     border-radius: 3px;
+    margin-top: 10px;
 }
 
 .texto{
@@ -91,4 +93,20 @@
 .texto:hover{
     background-color:#f0f2f4;
     color: black;
+    box-shadow: 2px 2px 2px 2px orange;
+}
+
+.linea{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    width: 25%;
+    position: relative;
+    top: 18px;
+}
+.title_nuevo_amazon{
+    background-color: white ;
+   position:relative;
+    font-size: 15px;
+    font-weight: 100;
+    
+   
 }

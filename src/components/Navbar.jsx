@@ -1,18 +1,22 @@
 import SearchIcon from "@material-ui/icons/Search";
 import React from "react";
 import { Link } from "react-router-dom";
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 const Navbar = () => {
    return (
+      <div className="container_navbars">
       <nav className="navbar">
+         <Link to="/">
          <img
             className="navbar_logo"
             src="https://res.cloudinary.com/dd01p9lb9/image/upload/v1632529769/sprint3/logo-amazon_3_xje0mj.png"
             alt="No disponible"
             srcset=""
          />
-         <div className="navber_ubicacion">
+         </Link>
+         <div className="navber_ubicacion navbar_link">
          <span className="title_ubicacion">Hola </span>
          <span className="title_ubicacion1"><img src="https://res.cloudinary.com/dd01p9lb9/image/upload/v1632541755/sprint3/gps_avkzvt.png" alt="no disponible"/>Elige tu direccion</span>
          </div>
@@ -51,6 +55,15 @@ const Navbar = () => {
          </Link>
          </div>
       </nav>
+      <nav className="navbar_inferior">
+            <div className="todo hover"><MenuIcon className="menu_hamburguesa"/> Todo</div>
+            <div className="tarjeta_regalo hover">Tarjetas de regalo</div>
+            <div className="prime hover">Prime</div>
+            <div className="losMasVendidos hover">Los Mas Vendidos</div>
+            <div className="computoYtabletas hover">Computo y Tabletas</div>
+            <div className="audioYesquiposDeSonido hover">Audio y Equipos de Sonido</div>
+      </nav>
+      </div>
    );
 };
 
