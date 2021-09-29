@@ -4,15 +4,17 @@ import './styles/login.css'
 import './styles/navbar.css'
 import './styles/footer.css'
 import AppRouter from './routers/AppRouter';
+import {Provider} from 'react-redux'
+import {store} from './store/store'
 
 
 
 
 
 ReactDOM.render(
-  <React.StrictMode>
-      <AppRouter />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>,
   document.getElementById('root')
 );
-;
+
