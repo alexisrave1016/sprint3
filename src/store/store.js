@@ -1,8 +1,11 @@
 // en esta podemos utilizar todo lo q modifiquemos en la tienda como tal derrsto no cmabiaria
 
 import { createStore, combineReducers,compose, applyMiddleware } from "redux";
-import loginReducer from "../reducers/loginReducer";
 import thunk from "redux-thunk";
+
+import loginReducer from "../reducers/loginReducer";
+import { registerReducer } from "../reducers/registerReducer";
+
 
 
 // esto combila los milwer
@@ -12,6 +15,7 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 const reducers= combineReducers({
     login: loginReducer,
+    register: registerReducer
 })
 
 export const store = createStore(
