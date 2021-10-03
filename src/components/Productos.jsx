@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useEffect }  from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useDispatch } from 'react-redux'
 import { logout } from '../actions/actionLogin'
 import { useForm } from '../hooks/useForm'
 import { fileUpload } from '../helpers/FileUpload'
-import { ProductoAsincronico } from '../actions/actionProducto'
+import { ProductoAsincronico, ListarAsincronico} from '../actions/actionProducto'
+import { ListarProductos } from './ListarProductos'
+
 
 export const Productos = ({history}) => {
     const dispatch = useDispatch()
 
-    const [ values, handleInputChange, reset ]= useForm({
+    const [ values, handleInputChange]= useForm({
         documento:'',
         nombres:'',
         apellidos:'',
@@ -47,6 +49,12 @@ export const Productos = ({history}) => {
            console.log(error.message);
        })
    }
+
+   useEffect(() => {
+       dispatch(ListarAsincronico())
+   }, [])
+
+
     return (
         <div>
              <form onSubmit={handleRegistro}>
@@ -109,6 +117,7 @@ export const Productos = ({history}) => {
  
                 </div>
             </form>
+            <ListarProductos />
         </div>
     )
 }

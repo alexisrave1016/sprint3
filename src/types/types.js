@@ -7,5 +7,7 @@ export const types={
 
 export const typesProductos ={
     registro: 'registro',
+    listar: 'listar',
     
+
 }

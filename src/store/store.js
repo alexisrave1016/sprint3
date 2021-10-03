@@ -17,7 +17,7 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 const reducers= combineReducers({
     login: loginReducer,
     register: registerReducer,
-    producto: productoReducer,
+    producto: productoReducer, //esto lo tenemos que poner igual en la useSelector
 })
 
 export const store = createStore(
