@@ -19,7 +19,7 @@ export const PrivateRoute  = ({
         )
 }
 
-PrivateRoute.propTypes={
+PrivateRoute.propTypes={ //propiedades que requieren en la funcion, q tipo de dato va a llegar y si es requerido 
     isAuthenticated: PropTypes.bool.isRequired,
     component: PropTypes.func.isRequired
 }

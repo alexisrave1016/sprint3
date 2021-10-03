@@ -5,6 +5,7 @@ import thunk from "redux-thunk";
 
 import loginReducer from "../reducers/loginReducer";
 import { registerReducer } from "../reducers/registerReducer";
+import { productoReducer } from "../reducers/productoReducer";
 
 
 
@@ -15,7 +16,8 @@ window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 const reducers= combineReducers({
     login: loginReducer,
-    register: registerReducer
+    register: registerReducer,
+    producto: productoReducer,
 })
 
 export const store = createStore(

@@ -6,7 +6,7 @@ import { loginGoogle, loginEmailPassword} from '../actions/actionLogin';
 
 
 
-function Login() {
+function Login({history}) {
 
     // dispatch envia o dispra un accion
     const dispatch = useDispatch();
@@ -23,18 +23,20 @@ const handleLogin = (e)=>{
     e.preventDefault();
     //dispatch es pra enciar en ridux en la crossOriginIsolated, si no esta fallando esto
    dispatch(loginEmailPassword(email,password));
+   history.replace('/');
     
 }
 
 const handleGoogle = ()=>{
-    dispatch(loginGoogle())
+    dispatch(loginGoogle());
+    history.replace('/');
 }
     return (
         
         
            
         <div className="login">
-            <Link to="/">
+            <Link to="/portada">
             <img className="login_logo" src="https://res.cloudinary.com/dd01p9lb9/image/upload/v1632590351/sprint3/Amazon-Logo_xzuxyg.png" alt="" srcset="" />
             </Link>
             <div className="login_container">

@@ -14,7 +14,7 @@ export const PublicRoute = ({
                 (!isAuthenticated) //vamos a validar si esta el usuario autenticado, lo hacemos con el ternario
                 ?(<Component {...props}/>)  //si esta autenticado q le muestre el componente  a cual desea ingresar
                 :(<Redirect to="/"/>)  //si no esta autenticado, hacemos una redireccion a login
-            )}
+            )} //aca iva solo /
             />
         )
 }

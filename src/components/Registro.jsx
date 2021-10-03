@@ -25,7 +25,7 @@ export const Registro = () => {
     return (
         <div className="registro"> 
             <Form onSubmit={handleRegistro} className="container">
-                  <Link to="/">  <img className="login_logo" src="https://res.cloudinary.com/dd01p9lb9/image/upload/v1632590351/sprint3/Amazon-Logo_xzuxyg.png" alt="no disponible" srcset="" /></Link>
+                  <Link to="/portada">  <img className="login_logo" src="https://res.cloudinary.com/dd01p9lb9/image/upload/v1632590351/sprint3/Amazon-Logo_xzuxyg.png" alt="no disponible" srcset="" /></Link>
                 <div className="registro_contianer">
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <h5 className="titulos">Tu nombre</h5>

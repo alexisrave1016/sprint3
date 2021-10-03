@@ -1,7 +1,16 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useDispatch } from 'react-redux'
+import { logout } from '../actions/actionLogin'
 
-export const Productos = () => {
+export const Productos = ({history}) => {
+    const dispatch = useDispatch()
+
+    const handleLogout =()=>{
+        dispatch(logout());
+        history.replace('/portada') // se supone q caundo cirre el logut me debe rediregir a esta pagina
+                                    //aca va login originalmente
+    }
     return (
         <div>
              <form>
@@ -44,11 +53,13 @@ export const Productos = () => {
                             style={{ display: 'none' }}
                         />
  
-                        <button className="btn btn-success">Imagen</button>
+                        <button className="btn btn-success" type="button">Imagen</button>
                     </div>
+                    <button className="btn btn-success" type="submit">Guardar</button>
  
                     <div>
-                        <button className="btn btn-primary"
+                        <button className="btn btn-primary" type="button"
+                        onClick={handleLogout}
                        >Logout</button>
                     </div>
  
