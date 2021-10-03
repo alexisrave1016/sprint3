@@ -15,5 +15,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const google = new GoogleAuthProvider();
+const db = getFirestore() //esto es para crear el crud
 
-export {app, google}
+export {app, google,db}

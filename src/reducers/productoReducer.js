@@ -9,7 +9,7 @@ export const productoReducer = (state = initialState, action) => {
        case typesProductos.registro:
            
           return{
-              ...state
+              producto:[action.payload]  //enviando a producto q lo resivimos como parametro
           }
    
        default:
