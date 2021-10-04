@@ -1,7 +1,7 @@
 import { getAuth, onAuthStateChanged } from "@firebase/auth";
 import React, {useState} from "react";
 import {
-  hashRouter as Router,
+  BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
 import Home from "../components/Home";
