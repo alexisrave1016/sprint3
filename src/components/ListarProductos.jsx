@@ -1,10 +1,12 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import {eliminarAsincrono} from '../actions/actionProducto'
  
 export const ListarProductos = () => {
 
     const {producto} = useSelector(store => store.producto)
+    const dispatch = useDispatch()
     
     return (
         <div>
@@ -13,8 +15,8 @@ export const ListarProductos = () => {
                     <tr>
                         <th>Documento</th>
                         <th>Nombres</th>
-                        <th>Apellidos</th>
-                        <th>Telefono</th>
+                        <th>Descripcion del producto</th>
+                        <th>Precio</th>
                         <th>Celular</th>
                         <th>Dirección</th>
                         <th>Correo</th>
@@ -35,7 +37,7 @@ export const ListarProductos = () => {
                             <td>{productoNuevo.dir}</td>
                             <td>{productoNuevo.email}</td>
                             <td><img src={productoNuevo.img} alt="no disponible"/></td>
-                            <td><button>Eliminar</button></td>
+                            <td><button onClick={()=>dispatch(eliminarAsincrono(productoNuevo.email))}>Eliminar</button></td>
 
                         </tr> 
                  )))

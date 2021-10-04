@@ -14,19 +14,19 @@ export const Productos = ({history}) => {
     const [ values, handleInputChange]= useForm({
         documento:'',
         nombres:'',
-        apellidos:'',
-        telefono:'',
+        descripcion:'',
+        precio:'',
         celular:'',
         direccion:'',
         email:'',
         imagen:''
     })
 
-    let {documento,nombres,apellidos,telefono,celular,direccion,email,imagen}=values;
+    let {documento,nombres,descripcion,precio,celular,direccion,email,imagen}=values;
 
     const handleRegistro=(e)=>{
         e.preventDefault();
-        dispatch(ProductoAsincronico(documento,nombres,apellidos,telefono,celular,direccion,email,imagen))
+        dispatch(ProductoAsincronico(documento,nombres,descripcion,precio,celular,direccion,email,imagen))
 
     }
 
@@ -62,7 +62,7 @@ export const Productos = ({history}) => {
                 <div className="form-group">
                     <div className="form-group col-md-4">
                         <label htmlFor="documento">Documento</label>
-                        <input className="form-control" type="text" name="documento" id="documento" value={documento} onChange={handleInputChange}/>
+                        <input className="form-control" type="number" name="documento" id="documento" value={documento} onChange={handleInputChange}/>
                     </div>
  
                     <div className="form-group col-md-4">
@@ -71,18 +71,18 @@ export const Productos = ({history}) => {
                     </div>
  
                     <div className="form-group col-md-4">
-                        <label htmlFor="apellidos">Apellidos</label>
-                        <input className="form-control" type="text" name="apellidos" id="apellidos" value={apellidos} onChange={handleInputChange}/>
+                        <label htmlFor="descripcion">Descripcion del Producto</label>
+                        <input className="form-control" type="text" name="descripcion" id="descripcion" value={descripcion} onChange={handleInputChange}/>
                     </div>
  
                     <div className="form-group col-md-4">
-                        <label htmlFor="telefono">Teléfono</label>
-                        <input className="form-control" type="text" name="telefono" id="telefono" value={telefono} onChange={handleInputChange}/>
+                        <label htmlFor="precio">Precio</label>
+                        <input className="form-control" type="number" name="precio" id="precio" value={precio} onChange={handleInputChange}/>
                     </div>
  
                     <div className="form-group col-md-4">
                         <label htmlFor="celular">Celular</label>
-                        <input className="form-control" type="text" name="celular" id="celular" value={celular} onChange={handleInputChange}/>
+                        <input className="form-control" type="number" name="celular" id="celular" value={celular} onChange={handleInputChange}/>
                     </div>
                     <div className="form-group col-md-4">
                         <label htmlFor="direccion">Dirección</label>

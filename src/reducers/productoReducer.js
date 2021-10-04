@@ -17,6 +17,11 @@ export const productoReducer = (state = initialState, action) => {
           return{
               producto: [...action.payload]
           }
+
+       case typesProductos.eliminar:
+           return{
+               producto: state.producto.filter(prod => prod.email !== action.payload)
+           }   
    
        default:
            return state;
