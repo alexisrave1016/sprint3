@@ -53,7 +53,7 @@ export const Productos = ({history}) => {
 
    useEffect(() => {
        dispatch(ListarAsincronico())
-   }, [])
+   },[])
 
 
     return (

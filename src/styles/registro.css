@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.container{
+.container_registro{
     display: flex;
     justify-content: center;
     flex-direction: column;
