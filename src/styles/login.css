@@ -80,6 +80,10 @@
     height: 25px;
     
 }
+.logo_face{
+    width: 25px;
+    height: 25px;
+}
 .login_google{
     display: flex;
     align-items: center;
@@ -90,6 +94,16 @@
     margin-top: 10px;
     cursor: pointer;
     
+}
+.login_facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .login_registro:hover{

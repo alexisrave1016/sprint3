@@ -8,6 +8,7 @@ import { ProductoAsincronico, ListarAsincronico} from '../actions/actionProducto
 import { ListarProductos } from './ListarProductos'
 
 
+
 export const Productos = ({history}) => {
     const dispatch = useDispatch()
 
@@ -118,6 +119,7 @@ export const Productos = ({history}) => {
                 </div>
             </form>
             <ListarProductos />
+           
         </div>
     )
 }

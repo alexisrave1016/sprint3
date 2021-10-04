@@ -29,14 +29,14 @@ export const ListarProductos = () => {
                       (producto)?
                       (  producto.map((productoNuevo, index)=>(
                         <tr key={index}>
-                            <td>{productoNuevo.doc}</td>
-                            <td>{productoNuevo.nom}</td>
-                            <td>{productoNuevo.ape}</td>
-                            <td>{productoNuevo.tel}</td>
-                            <td>{productoNuevo.cel}</td>
-                            <td>{productoNuevo.dir}</td>
-                            <td>{productoNuevo.email}</td>
-                            <td><img src={productoNuevo.img} alt="no disponible"/></td>
+                            <td className="informacion_producto">{productoNuevo.doc}</td>
+                            <td className="informacion_producto">{productoNuevo.nom}</td>
+                            <td className="informacion_producto">{productoNuevo.ape}</td>
+                            <td className="informacion_producto">{productoNuevo.tel}</td>
+                            <td className="informacion_producto">{productoNuevo.cel}</td>
+                            <td className="informacion_producto">{productoNuevo.dir}</td>
+                            <td className="informacion_producto">{productoNuevo.email}</td>
+                            <td className="informacion_producto"><img src={productoNuevo.img} alt="no disponible" className="img_producto" /></td>
                             <td><button onClick={()=>dispatch(eliminarAsincrono(productoNuevo.email))}>Eliminar</button></td>
 
                         </tr> 

@@ -1,6 +1,6 @@
 import { getAuth, signInWithEmailAndPassword, signInWithPopup, signOut } from "@firebase/auth";
 import { types } from "../types/types";
-import { google } from "../firebase/firebase";
+import { google, facebook } from "../firebase/firebase";
 
 
 export const loginEmailPassword = (email,password) => {
@@ -20,7 +20,15 @@ export const loginEmailPassword = (email,password) => {
     }
 }
 
-
+export const loginFacebook =()=>{
+    return(dispatch)=>{
+        const auth = getAuth();
+        signInWithPopup(auth, facebook)// popup para iniciar la sesion en google
+        .then(({user})=>{ 
+            dispatch(loginSincrono(user.uid, user.displayName))
+        }).catch(error=>console.log(error))
+    }
+}
 
 
 export const loginGoogle =()=>{

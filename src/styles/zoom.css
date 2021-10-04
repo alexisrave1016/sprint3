@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+    .options {
+      padding: 5px;
+      margin: 5px;
+      border: solid 1px black;
+      flex: none;
+      width: 200px;
+    }
+  
+  .used_props {
+      padding: 5px;
+      margin: 5px;
+      border: solid 1px black;
+      display: block;
+      flex: none;
+      width: 200px;
+    }
+  .used_props_caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+  .zoomed_image {
+      margin-top: 200px;
+      display: flex;
+      align-items: center;
+  
+    }
+  
+    .js-image-zoom__zoomed-area{
+      background-color: blue;
+    }
+  
+    .js-image-zoom__zoomed-image{
+      width: 550px;
+      height: 750px;
+    }
+  
+  
