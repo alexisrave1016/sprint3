@@ -44,7 +44,7 @@ const Navbar = () => {
             <span className="navbar_pedidos2">Y pedidos</span>
          </div>
          </Link>
-         <Link to="/" className="navbar_link">
+         {/* <Link to="/" className="navbar_link">
          <div className="navbar_carrito">
             <img src="https://res.cloudinary.com/dd01p9lb9/image/upload/v1632540832/sprint3/shopping-cart_r13zsu.png" className="logo_carrito" alt="no disponible"/>
             <div className="detalle_carrito">
@@ -52,7 +52,7 @@ const Navbar = () => {
             <span className="title_carrito">Carrito</span>
             </div>
          </div>
-         </Link>
+         </Link> */}
          </div>
       </nav>
       <nav className="navbar_inferior">
